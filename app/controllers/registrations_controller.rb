@@ -3,7 +3,9 @@ class RegistrationsController < ApplicationController
         user = User.create!(
             email: params['user']['email'], 
             password: params['user']['password'],
-            password_confirmation: params['user']['password_confirmation']
+            password_confirmation: params['user']['password_confirmation'],
+            dollar_balance: params['user']['dollar_balance'],
+            bitcoin_balance: params['user']['bitcoin_balance']
         )
 
         if user
