@@ -3,12 +3,17 @@ class TransactionsController < ApplicationController
     # include UserBalanceUpdateConcern
 
     def index
-        @user = User.find(params[:transaction][:user_id])
-        render json: {status: :ok, transactions: @user.transactions.all}
     end 
 
     def new 
     end
+
+    def show
+        # debugger
+        @user = User.find(params[:id])
+        render json: {status: :ok, transactions: @user.transactions.all}
+    end
+
 
     def create
         @user = User.find(params[:transaction][:user_id])

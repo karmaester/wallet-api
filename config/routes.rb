@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get :logged_in, to: "sessions#logged_in"
   get '/current_price', to: 'prices#get_current_price'
   get '/user_transactions', to: 'transactions#index'
+  get '/users/:id/transactions', to: 'transactions#show'
   resources :prices
   root to: "static#home"
 end
