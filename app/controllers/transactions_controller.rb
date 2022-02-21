@@ -4,7 +4,7 @@ class TransactionsController < ApplicationController
 
     def index
         @user = User.find(params[:transaction][:user_id])
-        @user.transactions.all
+        render json: {status: :ok, transactions: @user.transactions.all}
     end 
 
     def new 
