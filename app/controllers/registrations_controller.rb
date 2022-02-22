@@ -1,4 +1,10 @@
 class RegistrationsController < ApplicationController
+    
+    def show
+        @user = User.find(params[:id])
+        render json: {status: :ok, user: @user}
+    end
+
     def create
         user = User.create!(
             email: params['user']['email'], 

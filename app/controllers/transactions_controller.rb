@@ -9,7 +9,6 @@ class TransactionsController < ApplicationController
     end
 
     def show
-        # debugger
         @user = User.find(params[:id])
         render json: {status: :ok, transactions: @user.transactions.all}
     end

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/current_price', to: 'prices#get_current_price'
   get '/user_transactions', to: 'transactions#index'
   get '/users/:id/transactions', to: 'transactions#show'
+  get '/users/:id', to: 'registrations#show'
   resources :prices
   root to: "static#home"
 end
