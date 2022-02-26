@@ -17,7 +17,7 @@
 ## How it works
 
 - Clone the repository locally from [here](git@github.com:karmaester/wallet-api.git)
-- Open re-former folder and run `Bundle install`
+- Open wallet-api folder and run `Bundle install`
 - Start postgresql db `sudo service postgresql start`
 - Run `rails db:migrate`
 - Run `rails server`
@@ -43,8 +43,8 @@ Getting list of user's transactions:
 
 👤 **Khristian Rojas**
 
-- Github: [@githubhandle](https://github.com/karmaester)
-- Linkedin: [linkedin](https://www.linkedin.com/in/khristian-rojas/)
+- [Github](https://github.com/karmaester)
+- [Linkedin](https://www.linkedin.com/in/khristian-rojas/)
 
 ## 🤝 Contributing
 
