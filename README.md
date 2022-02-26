@@ -1,24 +1,62 @@
-# README
+# Wallet API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Uses in built rails functionality for registration and session handling with cors. This API serves the project [Wallet Frontend](https://github.com/karmaester/WalletFrontend)
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- Ruby on rails
+- Cors
 
-* System dependencies
+## Pre-requisites
 
-* Configuration
+- Ruby 3.0.0
+- Rails gem
+- Bundle
 
-* Database creation
+## How it works
 
-* Database initialization
+- Clone the repository locally from [here](git@github.com:karmaester/wallet-api.git)
+- Open re-former folder and run `Bundle install`
+- Start postgresql db `sudo service postgresql start`
+- Run `rails db:migrate`
+- Run `rails server`
 
-* How to run the test suite
+## How it works
 
-* Services (job queues, cache servers, search engines, etc.)
+If you start rails server in port 3001, working endpoints will be so:
 
-* Deployment instructions
+To get the current Bitcoin price: 
+- http://127.0.0.1:3001/current_price
 
-* ...
+Handling registration and session:
+- http://127.0.0.1:3001/registrations
+- http://127.0.0.1:3001/sessions
+
+Summing up transactions:
+- http://127.0.0.1:3001/transactions
+
+Getting list of user's transactions:
+- http://127.0.0.1:3001/users/${id}/transactions
+
+## Author
+
+👤 **Khristian Rojas**
+
+- Github: [@githubhandle](https://github.com/karmaester)
+- Linkedin: [linkedin](https://www.linkedin.com/in/khristian-rojas/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/karmaester/wallet-api/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is MIT licensed.
+
